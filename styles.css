@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+ 
+body{
+    background-image: url(https://www.gamosaurus.com/wp-content/uploads/Independant/Genshin-Impact/Vignettes/Evenements/vignette-genshin-impact-evenement-festival-des-lanternes-defi-solo-multijoueur-recompenses-quete-passe-bataille-date-infos-event.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: rgb(18, 17, 17);
+    width: 100%;
+
+}
+.headerbody {
+    color: white;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerbody-logo {
+    transition: 0.7s;
+    padding: 20px;
+    cursor: pointer;
+}
+.headerbody-logo:hover{
+    color: rgb(175, 168, 168);
+}
+.logo-inside{
+    color: rgb(175, 168, 168);
+    font-size: 25px;
+    transition: 0.7s;
+    text-transform: uppercase;
+}
+.headerbody-logo:hover .logo-inside{
+    color: white;
+}
+
+.navmenu {
+    color: rgb(245, 241, 241);
+}
+.navmenu-item {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 18px;
+    transition: 0.7s;
+    cursor: pointer;
+    position: relative;
+}
+.navmenu-item:hover{
+    color: rgb(175, 168, 168);
+}
+.navmenu-item::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transition: 0.4s;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+.navmenu-item:hover::after{
+    width: 100%;
+}
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    height: fit-content;
+    padding: 10px 20px;
+}
+.section {
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 6px 1px 15px #DBCD73;
+}
+
+.sectionblock {
+    width: 400px;
+    height: 500px;
+    background-image: url(./img/genshin-logo.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 6px 1px 15px #42F8DC;
+}
+.sectionblock:hover{
+    transform: scale(1.05);
+    box-shadow: -6px -1px 15px #3CF17E;
+}
+.sectiontitle {
+    width: 400px;
+    text-align: center;
+    height: 500px;
+    padding: 20px;
+}
+.sectiontitle-text{
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+.sectiontitle-text-2{
+    margin-top: 80px;
+    font-size: 25px;
+}
+.sectiontitle-text-3{
+    margin-top: 150px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+ 
+.sectioncard {
+    margin: 30px auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 6px 1px 15px #DBCD73;
+    margin: 20px auto;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: -6px -1px 15px #F8E14D;
+    color: #000;
+    transform: scale(1.05);
+}
+.card:hover .cardimg{
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #000;
+}
+ 
+
+.cardimg {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+ 
+}
